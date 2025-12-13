@@ -10,6 +10,15 @@ and compare post-pandemic recovery patterns across major UK rail operators.
 - Table: Passenger journeys by operator (Table 1223)
 - Time period: 2011–2025
 
+## Project Setup
+This project uses an RStudio Project (`.Rproj`) to manage the working directory.
+All file paths in the analysis script are relative to the project root.
+
+To reproduce the analysis:
+1. Clone or download the repository.
+2. Open the `.Rproj` file in RStudio.
+3. Run the script in `scripts/01_exploration.R`.  
+
 ## Research Questions
 1. How have UK rail passenger journeys changed over time, particularly around the COVID-19 period?
 2. To what extent have major UK rail operators recovered passenger journeys after COVID-19?
