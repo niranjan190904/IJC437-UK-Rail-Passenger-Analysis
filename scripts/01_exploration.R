@@ -197,13 +197,13 @@ ggsave(
 # -------------------------------
 # 15. Regression analysis (Govia Thameslink)
 # -------------------------------
-govia_data <- rail_long %>%
-  filter(operator == "govia_thameslink_railway_million")
+govia_pre <- govia_data %>% filter(year <= 2019)
 
-govia_model <- lm(journeys_million ~ year, data = govia_data)
+lm(journeys_million ~ year, data = govia_pre)
 
-summary(govia_model)
+summary(govia_pre)
 
 ############################################################
 # End of script
 ############################################################
+
