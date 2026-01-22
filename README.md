@@ -20,9 +20,10 @@ To reproduce the analysis:
 3. Run the script in `scripts/01_exploration.R`.  
 
 ## Research Questions
-1. How have UK rail passenger journeys changed over time, particularly around the COVID-19 period?
-2. To what extent have major UK rail operators recovered passenger journeys after COVID-19?
-3. Are there differences in recovery patterns between operators?
+1. How passengers journeys evolved across major UK rail operators after the covid 19?
+2. What was the consequences of the covid 19 shock across different operators?
+3. What is the major concern of post covid recovery deferred between operators?
+
 
 ## Methods
 - Data cleaning and preprocessing (removal of metadata, handling suppressed values)
@@ -39,6 +40,43 @@ To reproduce the analysis:
 1. Open the R project in RStudio.
 2. Run the script `scripts/01_exploration.R`.
 3. All figures will be generated and saved in `outputs/plots/`.
+
+
+Step 1: 
+Download the repository
+Option A — Clone with Git (recommended):
+git clone https://github.com/[your-username]/IJC437-UK-Rail-Passenger-Analysis.git
+
+Option B — Download ZIP:
+Click the green Code button on GitHub.
+Select Download ZIP.
+Extract the folder to your computer.
+
+Step 2: 
+Open the project
+Open RStudio:
+Go to File > Open Project and select IJC437_Project.Rproj (if created).
+Alternatively: Set your working directory to the project folder manually.
+
+Step 3: 
+Install required packages (first run only)
+Copy and paste this into the R console to install the specific libraries used in this analysis:
+install.packages(c("tidyverse", "readxl", "janitor", "stringr", "ggplot2"))
+
+Step 4:
+Run the analysis
+Open the script scripts/01_exploration.R.
+Click the Source button, or run:
+source("scripts/01_exploration.R")
+
+Step 5: 
+View outputs
+After the script finishes, you will find:
+Figures: Saved in /outputs/plots/ (e.g., figure1_trends.png, figure3_recovery.png).
+
+Data Objects: The cleaned dataframes (rail_clean, top_ops) will be available in your R Environment.
+
+All outputs are generated automatically from the script using relative file paths.
 
 ## Author
 Niranjan V
